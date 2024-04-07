@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="Dark_Goldenrod"> #C09146 </color>
+    <color name="Indian_Yellow">#D39F4D</color>
+    <color name="Sun_Ray"> #E8AF55</color>
+    <color name="Max_Yellow"> #FFC15E</color>
+    <color name="Yellow_Orange"> #F7B05B</color>
+    <color name="Cadmium_Orange"> #F7934C</color>
+    <color name="Tenner_Tawny"> #CC5803</color>
+    <color name="Black_Chocolate"> #1F1300</color>
+
 </resources>
