@@ -7,11 +7,8 @@ import androidx.room.ColumnInfo
 
 @Entity(tableName = "user_table")
 class User {
-    @PrimaryKey(autoGenerate = true)
-    var uid: Int = 0
-
-    @ColumnInfo(name = "full_name")
-    var fullName: String = ""
+    @PrimaryKey(autoGenerate = true) var uid: Int = 0
+    @ColumnInfo(name = "full_name") var fullName: String = ""
 
     @ColumnInfo(name = "email")
     var email: String = ""

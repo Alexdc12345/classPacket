@@ -38,6 +38,11 @@ class LoginActivity : AppCompatActivity() {
                     finish()
                 }
             }
+        binding.gotoSignup.setOnClickListener{
+            val intent = Intent(this, SignupActivity::class.java)
+            startActivity(intent)
+        }
+
         setContentView(binding.root)
     }
 }
