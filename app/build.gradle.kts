@@ -57,6 +57,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.navigation.fragment)
     /* database */
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.runtime)
