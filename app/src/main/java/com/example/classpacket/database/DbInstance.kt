@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [User::class], version = 1, exportSchema = false)
+@Database(entities = [Phishing::class, User::class], version = 3, exportSchema = false)
 abstract class CpDatabase : RoomDatabase() {
     abstract fun cpDao(): CpDao
 
@@ -23,7 +23,8 @@ abstract class CpDatabase : RoomDatabase() {
                     context.applicationContext,
                     CpDatabase::class.java,
                     "cp_database"
-                ).build()
+                ).fallbackToDestructiveMigration() // Add this line to enable destructive migrations
+                    .build()
                 INSTANCE = instance
                 return instance
             }

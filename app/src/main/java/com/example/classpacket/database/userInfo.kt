@@ -9,9 +9,7 @@ import androidx.room.ColumnInfo
 class User {
     @PrimaryKey(autoGenerate = true) var uid: Int = 0
     @ColumnInfo(name = "full_name") var fullName: String = ""
-
-    @ColumnInfo(name = "email")
-    var email: String = ""
+    @ColumnInfo(name = "email") var email: String = ""
 
     @ColumnInfo(name = "username")
     var username: String = ""

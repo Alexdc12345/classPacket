@@ -25,7 +25,6 @@ class LoginActivity : AppCompatActivity() {
 
         packetViewModel = ViewModelProvider(this)[ViewModel::class.java]
         val sharedPref = getSharedPreferences("sharedPref", Context.MODE_PRIVATE)
-        sharedPref.edit().putBoolean("login", false).apply()
         if (sharedPref.getBoolean("login",false)){
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
